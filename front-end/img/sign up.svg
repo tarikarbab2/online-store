@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="50" viewBox="0 0 54 50">
+  <g id="sign_up" data-name="sign up" transform="translate(1 -1)">
+    <path id="Path_3" data-name="Path 3" d="M35.091,30.333V25.222C35.091,19.577,31.021,15,26,15H10.091C5.07,15,1,19.577,1,25.222v5.111" transform="translate(0 18.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="9.091" cy="10.222" rx="9.091" ry="10.222" transform="translate(8.955 3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_1" data-name="Line 1" y2="15.333" transform="translate(44.182 15.778)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_2" data-name="Line 2" x1="13.636" transform="translate(37.364 23.444)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

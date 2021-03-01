@@ -1,0 +1,134 @@
+.header{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-image: linear-gradient(45deg,#333941,#0A0B0D);
+
+    &__container{
+        margin-top:10rem;
+        overflow: hidden;
+      
+    }
+    &__slide{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        @include responed(small-phone){
+            position: relative;
+        }
+
+
+
+    }
+    &__img{
+        width: 70rem;
+        height: 60rem;
+        margin-right: 15rem;
+        margin-bottom: 3rem;
+        @include responed(tablet-landscape){
+            width: 50rem;
+            height: 45rem;
+            margin-right: 10rem;
+        }
+        
+        @include responed(tablet-port){
+            margin-right: 5rem;
+            width: 50rem;
+            height: 45rem;
+        }
+        @include responed(small-tablet){
+            width: 45rem;
+            height: 40rem;
+        }
+        @include responed(phone){
+            width: 30rem;
+            height: 25rem;
+        }
+        @include responed(small-phone){
+            object-fit: cover;
+   opacity: 0.4;
+   margin-right: 0;
+
+        }
+  
+        
+    }
+    &__text{
+        font-size: 4rem;
+        color: #fff;
+        display: inline-block;
+        width: 40rem;
+        text-align: end;
+        @include responed(tablet-port){
+           font-size: 3rem;
+           width: 25rem;
+        }
+        @include responed(phone){
+            width: 15rem;
+            font-size: 2rem;
+        }
+        @include responed(small-phone){
+            position: absolute;
+            top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 25rem;
+        }
+        
+
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 4rem;
+
+    }
+    &__dot{
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+        margin: 0 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-left: 1rem;
+      }
+      .active {
+        background-color: #4C3197;
+      }
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+    &__title{
+        font-size: 3rem;
+        border-bottom: 2px solid #709FB0;
+        color:#709FB0;
+        font-weight: 700;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+    }
+}

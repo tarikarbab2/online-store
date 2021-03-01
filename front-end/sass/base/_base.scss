@@ -1,0 +1,73 @@
+@mixin responed($brekpoint) {
+    @if $brekpoint == small-phone{
+        @media (max-width:30em){@content;}//480px
+    }
+    @if $brekpoint == phone{
+        @media (max-width: 37.5em) {@content;} //600px
+        }
+        @if $brekpoint == small-tablet{
+            @media (max-width: 46.25em) {@content;} //740px
+                   } 
+
+    @if $brekpoint == tablet-port{
+         @media (max-width: 56.25em) {@content;} //900px
+            }
+            @if $brekpoint == normal{
+                @media (max-width: 56.25em) {@content;} //900px
+                   }
+
+    @if $brekpoint == tablet-landscape{
+         @media (max-width: 75em) {@content;} //1200px
+                } 
+    @if $brekpoint == big-desktop{
+          @media (min-width: 112.5em ) {@content;} //1800px
+          }              
+    }
+
+    html{
+    
+        
+        
+        
+        @include responed(big-desktop){
+            font-size: 75%;
+        }
+        font-size: 62.5%;
+       
+       
+        @include responed(tablet-landscape){
+            font-size: 56.25%;
+            
+        }
+        @include responed(tablet-port){
+            font-size: 50%;
+        }
+        
+    }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+       
+       
+    
+    }
+    ///header
+    body{
+        font-family: 'El Messiri', sans-serif;
+        box-sizing: border-box;
+        position: relative;
+       
+        
+    }
+    .en{
+        font-family: 'Newsreader', serif;
+    }
+    a:link,
+    a:visited{
+        text-decoration: none;
+        color: #ffffff;
+
+    }
