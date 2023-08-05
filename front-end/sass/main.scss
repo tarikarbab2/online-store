@@ -1,8 +1,11 @@
-
 @import './base/base';
-
 @import './layout/nav';
+@import './layout/side';
+@import './pages/add';
 @import './pages/home';
-@import './components/categories';
 @import './components/card';
+@import './components/cart';
+@import './components/categories';
 @import './components/form';
+@import './components/product';
+@import './components/useres';

@@ -9,6 +9,19 @@
         overflow: hidden;
       
     }
+    &__message{
+        width: 100%;
+        background-color:#D9F8C4;
+        text-align: center;
+        font-size: 2rem;
+        color: #377D71;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     &__slide{
         display:flex;
         align-items: center;
@@ -122,12 +135,14 @@
     flex-direction: column;
     
     align-items: flex-end;
+ 
     &__title{
+     
         font-size: 3rem;
         border-bottom: 2px solid #709FB0;
         color:#709FB0;
         font-weight: 700;
-        margin-top: 4rem;
+        margin-top: 8rem;
         margin-bottom: 2rem;
         margin-right: 3rem;
     }

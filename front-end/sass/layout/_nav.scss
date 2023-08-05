@@ -1,3 +1,10 @@
+.root{
+    --cart:"0";
+}
+.head__container{
+    display:flex;
+    position: relative;
+}
 .nav{
     display: flex;
     height: 8rem;
@@ -5,10 +12,10 @@
     justify-content: space-between;
     color: #ffffff;
     //position: absolute;
-    z-index: 50;
+    z-index: 300;
     background-color: #333941;
     align-items: center;
-    position: fixed;
+    
     border-bottom: 1px solid #707070;
     @include responed(tablet-port){
         position: fixed;
@@ -159,6 +166,10 @@
         
         padding-left: 3rem;
         font-weight: 500;
+        &.user{
+            order:-1;
+        }
+     
       
         @include responed(tablet-port){
             
@@ -185,6 +196,7 @@
         font-size: 2rem;
         text-decoration: none;
         color:#ffffff ;
+  
         
         
             margin-right: 2rem;
@@ -194,6 +206,14 @@
         & img{
              margin-right: 1rem;
              
+        }
+        &.user {
+            font-size: 1.6rem;
+            align-items: center;
+            
+            & img{
+                margin-right: 0.3rem;
+            }
         }
         @include responed(phone){
             opacity: 100%;
@@ -252,7 +272,17 @@
         &__link img{
             width: 3rem;
             height:2.5rem;
+       
         }
+
+        &__cart{
+           position: relative;
+       
+      
+        }
+ &__admin{
+    justify-content: flex-end;
+ }
         
 
     
@@ -261,4 +291,23 @@
     @include responed(small-tablet){
     justify-content: flex-start;
     }
+ }
+ .cart{
+     position: relative;
+    &::after{
+        content: var(--cart);
+           background-color:#EF1E6B;
+           width: 2rem;
+           height: 2rem;
+           position: absolute;
+           right: 0.2rem;
+           font-size: 1.4rem;
+           border-radius: 50%;
+           z-index: 200;
+           text-align: center;
+           top: -0.9rem;
+       }
+
+       ///admin
+     
  }

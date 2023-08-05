@@ -1,0 +1,104 @@
+.users{
+    display: inline-block;
+    
+    width: 80%;
+    text-align: end;
+    margin-left: 15%;
+   
+    
+  
+    &__title{
+        font-size: 2.5rem;
+        color: #4A47A3;
+        
+        padding-top: 4rem;
+    
+        
+    }
+    &__container{
+        border: 1px solid #C5C5C5;
+        width: 70%;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 2rem;
+        padding:1%;
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__name{
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    &__roll{
+        font-size: 1.8rem;
+    
+    }
+    &__add,&__add:link,&__add:visited{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: #fff;
+        background: #4A47A3;
+        width: 18rem;
+        height: 4.5rem;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+      
+
+    }
+    &__add-container{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    &__table{
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    &__edit{
+        display: flex;
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: flex-end;
+
+        
+    }
+    &__btn{
+        font-size: 1.8rem;
+        width: 14rem;
+        height: 4.5rem;
+        background:none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        
+        
+    }
+   
+    &__delete,&__delete:link,&__delete:visited{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(216, 41, 61);
+        border: 1px solid rgb(216, 41, 61);
+     
+    }
+    &__update,&__update:link,&__update:visited{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4A47A3;
+        border: 1px solid #4A47A3;
+    }
+    &__img{
+        width: 10rem;
+        height: 10rem;
+    }
+}

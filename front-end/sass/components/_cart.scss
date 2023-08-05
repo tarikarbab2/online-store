@@ -1,0 +1,164 @@
+.cart{
+    &-title{
+        text-align: end;
+        margin: 4%;
+        color: #4A47A3;
+    }
+    &__steps{
+        width:70vw;
+        
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        position: relative;
+       margin: 0 auto;
+
+     &-1{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         order: 2;
+
+     }
+     & hr{
+         order: 1;
+         border: 0;
+         border-top: 2px solid #4A47A3;
+         width: 100%;
+       
+         margin-top: 3.5rem;
+     }
+     &-img{
+         width: 8rem;
+         fill: #4A47A3;
+
+     }
+     &-title{
+         font-size: 1.6rem;
+         color: #4A47A3;
+         text-align: center;
+     }
+     &-2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+     &-circle{
+         font-size: 4rem;
+         width: 8rem;
+         border: 2px solid #4A47A3;
+         color: #4A47A3;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 8rem;
+         
+
+     }
+    }
+    &__container{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    &__item{
+        border: 1px solid #C5C5C5;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 2rem;
+        padding:1%;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        order: 3;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-right: 2rem;
+        
+    }
+    &__title{
+        font-size: 1.8rem;
+        color: #4A47A3;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+
+    }
+    &__img{
+        width: 7rem;
+        margin-bottom: 1rem;
+        align-self: flex-end;
+    }
+    &__description{
+       font-size: 1.6rem;
+       text-align: end;
+       width: 30%;
+        &__container{
+            order: 2;
+            align-self: center;
+            color: #4A47A3;
+            width: 65%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__price{
+        font-size: 2.2rem;
+        color: #76BA99;
+        align-self: flex-end;
+        margin-left: 0.5rem;
+    }
+    &__delete{
+        position: absolute;
+        top: 5%;
+        left: 1.5%;
+        &-img{
+            width: 3rem;
+        }
+    }
+    &__total{
+        padding:2.5rem 2%;
+        &-text{
+            display: flex;
+            order: 1;
+        & h1{
+            font-size: 2rem;
+            color: #4A47A3;
+        }
+        
+        
+    }
+    &-img{
+        width: 3rem;
+        fill: #4A47A3;
+        height: 2.5rem;
+       }
+       &-price{
+       color: #76BA99;
+       font-size: 2rem;
+       }
+   
+}
+&__form{
+    justify-self: start;
+    margin-bottom: 5rem;
+    &-sumbit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4A47A3;
+        width: 15rem;
+        height: 6rem;
+        font-size: 2.2rem;
+        color: #fff;
+        box-shadow: 0.5rem 0.2rem 0.5rem rgba(0,0,0,0.4);
+        
+    }
+}
+}
